@@ -30,4 +30,51 @@ Esta aplicación es un sistema de gestión de proyectos y tareas desarrollado co
 ### Pasos para ejecutar la aplicación localmente
 
 1. Clona el repositorio:
+git clone https://github.com/sSiXx30/Innclod-angular
+cd Innclod-angular
 
+2. Instala las dependencias:
+npm install
+
+3. Inicia el servidor de desarrollo:
+
+npm run start
+
+o si tienes Angular CLI instalado:
+
+ng s -o
+
+
+4. Abre el navegador y accede a: [http://localhost:4200](http://localhost:4200)
+o la ruta local que se muestra en el terminal.
+
+---
+
+## Uso
+
+- Desde la pantalla de login, ingresa cualquier usuario y contraseña (simulados) para iniciar sesión.
+- Navega a la lista de proyectos, crea, edita o elimina proyectos mediante los botones correspondientes.
+- Desde cada proyecto, accede a sus tareas y realiza las mismas operaciones de gestión.
+- Usa el botón "Cerrar sesión" para salir.
+
+---
+
+## Estructura del proyecto
+
+- `src/app/auth` - Módulo y componentes para autenticación.
+- `src/app/projects` - Módulo y componentes para gestión de proyectos.
+- `src/app/tasks` - Módulo y componentes para gestión de tareas.
+- `src/app/shared` - Componentes compartidos, modales, servicios de notificaciones y manejo de errores.
+- Lazy Loading aplicado para módulos de proyectos y tareas para optimizar la carga.
+
+---
+
+## Notas
+
+- La autenticación es simulada para efectos de la prueba.
+- Las operaciones de creación, actualización y eliminación simulan las respuestas HTTP dado que la API pública es de solo lectura.
+- Se priorizó la modularidad, reutilización y buenas prácticas en Angular.
+
+---
+
+¡Gracias por revisar el proyecto!
