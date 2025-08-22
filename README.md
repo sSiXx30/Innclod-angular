@@ -30,21 +30,22 @@ Esta aplicación es un sistema de gestión de proyectos y tareas desarrollado co
 ### Pasos para ejecutar la aplicación localmente
 
 1. Clona el repositorio:
-git clone https://github.com/sSiXx30/Innclod-angular
+   
+   git clone https://github.com/sSiXx30/Innclod-angular
 
-cd Innclod-angular
+   cd Innclod-angular
 
 3. Instala las dependencias:
    
-npm install
+   npm install
 
 4. Inicia el servidor de desarrollo:
 
-npm run start
+   npm run start
 
 o si tienes Angular CLI instalado:
 
-ng s -o
+   ng s -o
 
 
 4. Abre el navegador y accede a: [http://localhost:4200](http://localhost:4200)
