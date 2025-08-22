@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-title>Tareas del Proyecto</mat-card-title>
+  <mat-card-content>
+    <div class="toolbar-tasks">
+      <button mat-raised-button color="primary" (click)="onAddTask()">Nueva Tarea</button>
+      <button mat-raised-button color="warn" (click)="onLogout()">Cerrar sesión</button>
+    </div>
+    <div *ngIf="isLoading">Cargando tareas...</div>
+    <div *ngIf="error" class="error">{{ error }}</div>
+    <mat-list *ngIf="!isLoading && !error">
+      <mat-list-item *ngFor="let task of tasks">
+        <mat-checkbox [checked]="task.completed" disabled color="primary">
+          <span [ngClass]="{'task-completed': task.completed}">{{ task.title }}</span>
+        </mat-checkbox>
+        <span style="flex: 1 1 auto"></span>
+        <button mat-icon-button matTooltip="Editar" class="accent-action" (click)="onEditTask(task)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="Eliminar" class="warn-action" (click)="onDeleteTask(task.id)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

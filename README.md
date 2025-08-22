@@ -1,83 +1,59 @@
-# Innclod Angular - Gestión de Proyectos y Tareas
+# InnclodAngular
 
-## Descripción
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
 
-Esta aplicación es un sistema de gestión de proyectos y tareas desarrollado con Angular y Angular Material. Consume datos de APIs públicas para listar proyectos y tareas, e incluye funcionalidades de autenticación simulada, manejo de formularios reactivos, protección de rutas, Lazy Loading y gestión de errores.
+## Development server
 
----
+To start a local development server, run:
 
-## Características principales
+```bash
+ng serve
+```
 
-- **Autenticación simulada**: Login y Logout con almacenamiento de sesión en `LocalStorage`.
-- **Listado de proyectos**: Obtención de proyectos desde API pública [JSONPlaceholder](https://jsonplaceholder.typicode.com/users).
-- **Listado de tareas**: Visualización de tareas asociadas a cada proyecto desde API pública [JSONPlaceholder](https://jsonplaceholder.typicode.com/todos) con Lazy Loading.
-- **Creación y edición**: Formularios reactivos para crear y modificar proyectos y tareas, con validaciones.
-- **Eliminación con confirmación**: Modales para confirmar eliminaciones usando Angular Material.
-- **Manejo de errores**: Gestión y notificaciones de errores en peticiones HTTP.
-- **Protección de rutas**: Rutas protegidas mediante Guards para usuarios autenticados.
-- **Modularidad y Lazy Loading**: Arquitectura modular y optimización con carga diferida de módulos.
-- **Interfaz responsiva y accesible**: Uso de Angular Material para una experiencia de usuario consistente y moderna.
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
----
+## Code scaffolding
 
-## Instalación y ejecución
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-### Requisitos previos
+```bash
+ng generate component component-name
+```
 
-- [Node.js](https://nodejs.org/) (v16 o superior recomendado)
-- [Angular CLI](https://angular.io/cli) (opcional, aunque no esencial para ejecutar)
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-### Pasos para ejecutar la aplicación localmente
+```bash
+ng generate --help
+```
 
-1. Clona el repositorio:
-   
-   git clone https://github.com/sSiXx30/Innclod-angular
+## Building
 
-   cd Innclod-angular
+To build the project run:
 
-3. Instala las dependencias:
-   
-   npm install
+```bash
+ng build
+```
 
-4. Inicia el servidor de desarrollo:
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-   npm run start
+## Running unit tests
 
-o si tienes Angular CLI instalado:
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-   ng s -o
+```bash
+ng test
+```
 
+## Running end-to-end tests
 
-4. Abre el navegador y accede a: [http://localhost:4200](http://localhost:4200)
-o la ruta local que se muestra en el terminal.
+For end-to-end (e2e) testing, run:
 
----
+```bash
+ng e2e
+```
 
-## Uso
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-- Desde la pantalla de login, ingresa cualquier usuario y contraseña (simulados) para iniciar sesión.
-- Navega a la lista de proyectos, crea, edita o elimina proyectos mediante los botones correspondientes.
-- Desde cada proyecto, accede a sus tareas y realiza las mismas operaciones de gestión.
-- Usa el botón "Cerrar sesión" para salir.
+## Additional Resources
 
----
-
-## Estructura del proyecto
-
-- `src/app/auth` - Módulo y componentes para autenticación.
-- `src/app/projects` - Módulo y componentes para gestión de proyectos.
-- `src/app/tasks` - Módulo y componentes para gestión de tareas.
-- `src/app/shared` - Componentes compartidos, modales, servicios de notificaciones y manejo de errores.
-- Lazy Loading aplicado para módulos de proyectos y tareas para optimizar la carga.
-
----
-
-## Notas
-
-- La autenticación es simulada para efectos de la prueba.
-- Las operaciones de creación, actualización y eliminación simulan las respuestas HTTP dado que la API pública es de solo lectura.
-- Se priorizó la modularidad, reutilización y buenas prácticas en Angular.
-
----
-
-¡Gracias por revisar el proyecto!
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
