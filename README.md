@@ -40,15 +40,21 @@ luego
 
 2. Instala las dependencias:
 
-    npm install
+       npm install
 
 3. Inicia el servidor de desarrollo:
 
-    npm run start
+        npm run start
+   
+   *(Enabling autocompletion will modify configuration files
+ in your home directory.) Yes*
+
 
 o si tienes Angular CLI instalado:
 
     ng s -o
+
+    
 
 
 4. Abre el navegador y accede a: [http://localhost:4200](http://localhost:4200)
@@ -86,6 +92,7 @@ o si tienes Angular CLI instalado:
 ---
 
 ¡Gracias por revisar el proyecto!
+
 
 
 
